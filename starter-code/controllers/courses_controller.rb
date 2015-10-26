@@ -52,5 +52,4 @@ class RecipeApp < Sinatra::Base
       redirect("/courses/#{@course.id}")
     end
   end
-
 end
