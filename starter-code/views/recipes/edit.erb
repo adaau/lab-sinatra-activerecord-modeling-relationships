@@ -1,0 +1,20 @@
+<h2>Edit Recipe</h2>
+
+<form class="form" method="post" action="/recipes/<%= @recipe.id %>/update">
+  <div class="form-group">
+    <label for="recipe_title_edit">Title:</label>
+    <input class="form-control" type="text" id="recipe_title_edit" name="recipe[title]" value="<%= @recipe.title %>">
+  </div>
+
+  <div class="form-group">
+    <label for="recipe_description_edit">Description:</label>
+    <input class="form-control" type="text" id="recipe_description_edit" name="recipe[description]" value="<%= @recipe.description %>">
+  </div>
+
+  <div class="form-group">
+    <label for="">Servings:</label>
+    <input class="form-control" type="text" id="recipe_servings_edit" name="recipe[servings]" value="<%= @recipe.servings %>">
+  </div>
+
+  <button class="btn btn-primary" type="submit">Edit Recipe</button>
+</form>
